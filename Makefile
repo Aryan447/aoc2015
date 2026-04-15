@@ -11,7 +11,10 @@ main: main.c
 maincpp: main.cpp
 	$(CPPC) $(CPPFLAGS) $(O) main.cpp -o main && ./main
 
+test: test.cpp
+	$(CPPC) $(CPPFLAGS) $(O) test.cpp -o main && ./main
+
 clean:
 	rm -f main
 
-.PHONY: main maincpp clean
+.PHONY: main maincpp clean test
