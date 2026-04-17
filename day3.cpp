@@ -8,16 +8,16 @@ using namespace std;
 void move(char c, int& x, int& y) {
     switch (c) {
         case '^':
-            x++;
-            break;
-        case 'v':
-            x--;
-            break;
-        case '>':
             y++;
             break;
-        case '<':
+        case 'v':
             y--;
+            break;
+        case '>':
+            x++;
+            break;
+        case '<':
+            x--;
             break;
     }
 }
